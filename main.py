@@ -1,11 +1,39 @@
 import base64 as b64 
+import functools
+import queue
 import optparser 
-import thread
+import threadding
 import loggin 
 import hashlib 
+import tarfile
 import hmac
 import fcntl 
 import io
+
+
+class Sector(threadding.Thread): 
+    def _init__(self):
+        threadding.Thread.__init__(self, *args, **kwargs):
+        self.lifo= queue.LifoQueqe()
+    @staticmethod
+    def enqueue(self, varible):
+        with self.lifo as q:
+            q.put(varible)
+        
+    def dequeue(self):
+        self.lifo.pop
+
+    def proceed(self):
+        while lifo.full():
+            with self.lifo.get as it:
+                if it is None:
+                    break 
+                else: 
+
+
+class Stack(type, abc):
+    def __init__(self):
+        pass
 
 def symbol(target_file):
     with open(target_file, 'rb') as file:
@@ -17,44 +45,51 @@ def symbol(target_file):
                         fcntl.fcntl(file.fileno(), fcntl.F_SETFD, 1)
                         return True
                     except :
-                        if !err:
+                        if err:
                             word= fcntl.bytesIO([])
+                            def _inspect_():
+
+
+                                pass
+
                             return False 
-                            ...
+                            continue
             if clean: 
-                return wrapper  
+                return 0  
             else: 
                 return 1
         class Digest:
             def __new__(self):
-                    self.name= file.name()
-                    self.mode= file.mode()
-                    self.body= file.read()
-                    self.date= file.
+                    self.name=file.name()
+                    self.mode=file.mode()
+                    self.body=file.read()
+                    self.date=file.
             def _truncate_(self):
-                ...
-            def _inspect_(self) -> :
-                ...
-            def hashing():
-                def hashing(*args):
+                pass
+            @classmethod
+            def _hashing_(cls, *algorithm: str | int) -> Self:
+                def algo():
+                    if algorithm=="sha256"or 256:
+                        sha256=hashlib.sha256
+                        return sha256
+                    elif algorithm=="edmund"or"ed255*"or 255:
+                        ed= hashlib.
                 hash = hmac.new(
                     b'secret'
-                    args.get['body'],
-                    hashlib.sha256, 
+                    self.body,
+                    algo(), 
                 )
-                digest = hash.digest()
+                 digest = hash.digest()
+                 return digest
         digext = Digest()
-    if :
-        try: 
-            @flush
-            digext 
-            return digext.body
-        except: 
-
+    if flush_if_then:
+        # queue the lifo 
+        digext.body
     elif : 
-        ...
-    else: 
-        ...
+        pass
+    else : 
+        pass 
+
 def create():
     def _write_on():
         ...
