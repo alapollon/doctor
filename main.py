@@ -84,7 +84,7 @@ def symbol(target_file):
         digext = Digest()
     if flush_if_then:
         # queue the lifo 
-        digext.body
+        Sector.enqueue(digext.body) 
     elif : 
         pass
     else : 
