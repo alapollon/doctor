@@ -7,6 +7,7 @@ import loggin
 import hashlib 
 import tarfile
 import hmac
+import mmap
 import fcntl 
 import io
 
@@ -37,23 +38,21 @@ class Stack(type, abc):
 
 def symbol(target_file):
     with open(target_file, 'rb') as file:
-        flush= { }
         def flush_if_then(func):
             def clean():
                 while file is not None: 
+                    infile=mmap(file,)
                     try:
                         fcntl.fcntl(file.fileno(), fcntl.F_SETFD, 1)
                         return True
                     except :
                         if err:
                             word= fcntl.bytesIO([])
+                            for i in word:
                             def _inspect_():
-
-
                                 pass
-
                             return False 
-                            continue
+                            continue 
             if clean: 
                 return 0  
             else: 
