@@ -34,22 +34,19 @@ def _hashing_( body, *algorithm: str | int) -> Self:
                     self.mode=file.mode()
                     self.body=file.read()
                     self.date=file.
+                    self.map=mmap(file)
             def _truncate_(self):
+                size=0 
+                
                 pass
 
             def _resize_(self)
+                pass
 
-class Sector(): 
+class Sector(thread.threadding): 
     def _init__(self):
         self.lifo= queue.LifoQueqe()
-    @staticmethod
-    def enqueue(self, varible):
-        with self.lifo as q:
-            q.put(varible)
-        
-    def dequeue(self):
-        self.lifo.pop
-
+        self.stack=[]
     def proceed(self):
         while lifo.full():
             with self.lifo.get as it:
@@ -57,22 +54,12 @@ class Sector():
                     break 
                 else: 
 
-
-class Stack():
-    def __init__(self, filename, digest):
-        threadding.Thread.__init__(self, *args, **kwargs):
-        self.stack=[]
-        return 
-
-    def _append_():
-        pass
-
 def symbol(target_file):
     with open(target_file, 'rb') as file:
         def flush_if_then(func):
+      
             def clean():
                 while file is not None: 
-                    infile=mmap(file)
                     try:
                         fcntl.fcntl(file.fileno(), fcntl.F_SETFD, 1)
                         return True
@@ -84,9 +71,8 @@ def symbol(target_file):
                 return 0  
             else: 
                 word= fcntl.bytesIO([])
-                
                             for i in :
-
+                                
                                 pass
     if flush_if_then:
         # queue the lifo 
