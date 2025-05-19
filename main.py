@@ -12,9 +12,35 @@ import fcntl
 import io
 
 
-class Sector(threadding.Thread): 
+
+def _hashing_( body, *algorithm: str | int) -> Self:
+    def algo(algorithm):
+        if algorithm=="sha256"or 256:
+            sha256=hashlib.sha256
+            return sha256
+        elif algorithm:
+            return 
+        elif algorithm=="edmund"or"ed255*"or 255:
+            ed= hashlib.
+            return ed
+    hash = hmac.new(
+        b'secret'
+        self.body,
+        algo(), 
+    )
+ class Digest():
+            def __init__(self, file):
+                    self.name=file.name()
+                    self.mode=file.mode()
+                    self.body=file.read()
+                    self.date=file.
+            def _truncate_(self):
+                pass
+
+            def _resize_(self)
+
+class Sector(): 
     def _init__(self):
-        threadding.Thread.__init__(self, *args, **kwargs):
         self.lifo= queue.LifoQueqe()
     @staticmethod
     def enqueue(self, varible):
@@ -32,8 +58,13 @@ class Sector(threadding.Thread):
                 else: 
 
 
-class Stack(type, abc):
-    def __init__(self):
+class Stack():
+    def __init__(self, filename, digest):
+        threadding.Thread.__init__(self, *args, **kwargs):
+        self.stack=[]
+        return 
+
+    def _append_():
         pass
 
 def symbol(target_file):
@@ -41,46 +72,22 @@ def symbol(target_file):
         def flush_if_then(func):
             def clean():
                 while file is not None: 
-                    infile=mmap(file,)
+                    infile=mmap(file)
                     try:
                         fcntl.fcntl(file.fileno(), fcntl.F_SETFD, 1)
                         return True
                     except :
                         if err:
-                            word= fcntl.bytesIO([])
-                            for i in word:
-                            def _inspect_():
-                                pass
                             return False 
                             continue 
             if clean: 
                 return 0  
             else: 
-                return 1
-        class Digest:
-            def __new__(self):
-                    self.name=file.name()
-                    self.mode=file.mode()
-                    self.body=file.read()
-                    self.date=file.
-            def _truncate_(self):
-                pass
-            @classmethod
-            def _hashing_(cls, *algorithm: str | int) -> Self:
-                def algo():
-                    if algorithm=="sha256"or 256:
-                        sha256=hashlib.sha256
-                        return sha256
-                    elif algorithm=="edmund"or"ed255*"or 255:
-                        ed= hashlib.
-                hash = hmac.new(
-                    b'secret'
-                    self.body,
-                    algo(), 
-                )
-                 digest = hash.digest()
-                 return digest
-        digext = Digest()
+                word= fcntl.bytesIO([])
+                
+                            for i in :
+
+                                pass
     if flush_if_then:
         # queue the lifo 
         Sector.enqueue(digext.body) 
